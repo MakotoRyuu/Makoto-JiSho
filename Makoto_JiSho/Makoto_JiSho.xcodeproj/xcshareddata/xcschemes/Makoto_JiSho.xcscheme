@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDA211B363A7180F01995A28"
-               BuildableName = "Makoto&#x8a5e;&#x66f8;.app"
-               BlueprintName = "Makoto&#x8a5e;&#x66f8;"
-               ReferencedContainer = "container:Makoto&#x8a5e;&#x66f8;.xcodeproj">
+               BuildableName = "Makoto_JiSho.app"
+               BlueprintName = "Makoto_JiSho"
+               ReferencedContainer = "container:Makoto_JiSho.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDA211B363A7180F01995A28"
-            BuildableName = "Makoto&#x8a5e;&#x66f8;.app"
-            BlueprintName = "Makoto&#x8a5e;&#x66f8;"
-            ReferencedContainer = "container:Makoto&#x8a5e;&#x66f8;.xcodeproj">
+            BuildableName = "Makoto_JiSho.app"
+            BlueprintName = "Makoto_JiSho"
+            ReferencedContainer = "container:Makoto_JiSho.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDA211B363A7180F01995A28"
-            BuildableName = "Makoto&#x8a5e;&#x66f8;.app"
-            BlueprintName = "Makoto&#x8a5e;&#x66f8;"
-            ReferencedContainer = "container:Makoto&#x8a5e;&#x66f8;.xcodeproj">
+            BuildableName = "Makoto_JiSho.app"
+            BlueprintName = "Makoto_JiSho"
+            ReferencedContainer = "container:Makoto_JiSho.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

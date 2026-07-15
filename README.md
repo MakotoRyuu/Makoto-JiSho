@@ -1,4 +1,4 @@
-# Makoto詞書
+# Makoto_JiSho
 
 **IOS18+ ONLY** <br>
 

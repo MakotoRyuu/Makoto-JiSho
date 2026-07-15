@@ -17,7 +17,7 @@ struct AboutView: View {
                             .font(.system(size: 56))
                             .foregroundStyle(DesignTokens.accent)
 
-                        Text("Makoto詞書")
+                        Text("Makoto_JiSho")
                             .font(.system(.title2, design: .rounded))
                             .fontWeight(.bold)
 
@@ -38,7 +38,7 @@ struct AboutView: View {
             }
 
             Section {
-                Text("Makoto詞書 is a minimalist vocabulary app with a swipe-based interface inspired by short-form video apps. Simply swipe up and down to browse words — making learning lightweight and effortless.")
+                Text("Makoto_JiSho is a minimalist vocabulary app with a swipe-based interface inspired by short-form video apps. Simply swipe up and down to browse words — making learning lightweight and effortless.")
                     .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.secondary)
             } header: {

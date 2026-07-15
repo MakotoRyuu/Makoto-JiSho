@@ -39,7 +39,7 @@
 		AE7B7E360E330CAEB2385971 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BA7EFDCC708B10D7D906E316 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		BCC6BE677F6FD57920E01D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D11BFA9711949526E89C32F4 /* Makoto詞書.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Makoto詞書.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11BFA9711949526E89C32F4 /* Makoto_JiSho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Makoto_JiSho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -56,7 +56,7 @@
 		4EC173448256AA707D175531 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D11BFA9711949526E89C32F4 /* Makoto詞書.app */,
+				D11BFA9711949526E89C32F4 /* Makoto_JiSho.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDA211B363A7180F01995A28 /* Makoto詞書 */ = {
+		DDA211B363A7180F01995A28 /* Makoto_JiSho */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto詞書" */;
+			buildConfigurationList = 3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto_JiSho" */;
 			buildPhases = (
 				51D0DEFF5CFF13EDAA54CA70 /* Sources */,
 				AE58206AD73819E3EE682B85 /* Resources */,
@@ -151,11 +151,11 @@
 			);
 			dependencies = (
 			);
-			name = "Makoto詞書";
+			name = "Makoto_JiSho";
 			packageProductDependencies = (
 			);
-			productName = "Makoto詞書";
-			productReference = D11BFA9711949526E89C32F4 /* Makoto詞書.app */;
+			productName = "Makoto_JiSho";
+			productReference = D11BFA9711949526E89C32F4 /* Makoto_JiSho.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto詞書" */;
+			buildConfigurationList = 77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto_JiSho" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -186,7 +186,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDA211B363A7180F01995A28 /* Makoto詞書 */,
+				DDA211B363A7180F01995A28 /* Makoto_JiSho */,
 			);
 		};
 /* End PBXProject section */
@@ -362,7 +362,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
-				PRODUCT_NAME = "Makoto詞書";
+				PRODUCT_NAME = "Makoto_JiSho";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -389,7 +389,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
-				PRODUCT_NAME = "Makoto詞書";
+				PRODUCT_NAME = "Makoto_JiSho";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto詞書" */ = {
+		3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto_JiSho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED2286D79F0E294BA8A829F4 /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto詞書" */ = {
+		77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto_JiSho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62702535BC6E37DC77FC5BDB /* Debug */,

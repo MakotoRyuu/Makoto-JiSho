@@ -7,9 +7,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Makoto詞書</string>
+	<string>Makoto_JiSho</string>
 	<key>CFBundleName</key>
-	<string>Makoto詞書</string>
+	<string>Makoto_JiSho</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CFBundleShortVersionString</key>

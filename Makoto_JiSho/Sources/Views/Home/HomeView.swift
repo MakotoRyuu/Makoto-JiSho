@@ -45,7 +45,7 @@ struct HomeView: View {
             }
             .frame(maxWidth: .infinity)
             .background(DesignTokens.background.ignoresSafeArea())
-            .navigationTitle(activeBookName ?? "Makoto詞書")
+            .navigationTitle(activeBookName ?? "Makoto_JiSho")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

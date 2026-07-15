@@ -1,4 +1,4 @@
-name: Makoto詞書
+name: Makoto_JiSho
 options:
   bundleIdPrefix: com.makotomaruki
   deploymentTarget:
@@ -12,7 +12,7 @@ settings:
     SWIFT_VERSION: "6.0"
 
 targets:
-  Makoto詞書:
+  Makoto_JiSho:
     type: application
     platform: iOS
     deploymentTarget: "18.0"
@@ -24,7 +24,7 @@ targets:
       base:
         INFOPLIST_FILE: Sources/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.makotomaruki.makoto-kotobagaki
-        PRODUCT_NAME: "Makoto詞書"
+        PRODUCT_NAME: "Makoto_JiSho"
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: ""
         GENERATE_INFOPLIST_FILE: YES
