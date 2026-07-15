@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Makoto詞書' in project 'Makoto詞書' (no dependencies)
