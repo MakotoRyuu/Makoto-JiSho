@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AA1A4CE0E31642D5C937844 /* WordImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C1B7A3D6860C07882CC7B /* WordImporter.swift */; };
+		2D3E0DD01D826ED12D3C9870 /* ImportPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF74A223108AA5FDBC13600 /* ImportPreviewView.swift */; };
+		4FEB730BEB8371D4A39043EF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7EFDCC708B10D7D906E316 /* AboutView.swift */; };
+		6CB5BEA38103630A5804F358 /* WordBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48B88A2A1CF1F9CBF49E59 /* WordBook.swift */; };
+		6DFCF0288AF8C3533B5A8E6E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325463579F2BEE1023FACAEC /* SwipeView.swift */; };
+		8661FCA0A7661E239C92607F /* WordCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346DF4464F13230715A2C3D /* WordCardView.swift */; };
+		8EF8F4A94617E214F0187E23 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7B7E360E330CAEB2385971 /* SettingsView.swift */; };
+		ACFDAFA748E5290C833BF97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC6BE677F6FD57920E01D62 /* Assets.xcassets */; };
+		B975826B08EE4518B0E0D63A /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A8C49738FD83A6996AEE4 /* DesignTokens.swift */; };
+		BBD88DCE287B69055B8C1946 /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1576C66B335F85EAE1840 /* ProgressTracker.swift */; };
+		CF40B39C8711884FE9F38C8C /* MakotoKotobagakiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3AF98FFA27D128E820996 /* MakotoKotobagakiApp.swift */; };
+		D9E36BC994A81776F887A55B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9214F3BC189A684CB36D8039 /* Word.swift */; };
+		F4C5673138C7BFCC9A76D9BC /* ProgressState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911699CBC1DCC70A9C20FED /* ProgressState.swift */; };
+		FF87D28D038CCE42C64E9356 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68360D348939F735297D53DF /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000A8C49738FD83A6996AEE4 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		15D3AF98FFA27D128E820996 /* MakotoKotobagakiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakotoKotobagakiApp.swift; sourceTree = "<group>"; };
+		1EC1576C66B335F85EAE1840 /* ProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTracker.swift; sourceTree = "<group>"; };
+		2346DF4464F13230715A2C3D /* WordCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardView.swift; sourceTree = "<group>"; };
+		2F48B88A2A1CF1F9CBF49E59 /* WordBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBook.swift; sourceTree = "<group>"; };
+		2FF74A223108AA5FDBC13600 /* ImportPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPreviewView.swift; sourceTree = "<group>"; };
+		325463579F2BEE1023FACAEC /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		389D1FBA82D78EEFBF71C31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		68360D348939F735297D53DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		721C1B7A3D6860C07882CC7B /* WordImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordImporter.swift; sourceTree = "<group>"; };
+		9214F3BC189A684CB36D8039 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		A911699CBC1DCC70A9C20FED /* ProgressState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressState.swift; sourceTree = "<group>"; };
+		AE7B7E360E330CAEB2385971 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BA7EFDCC708B10D7D906E316 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		BCC6BE677F6FD57920E01D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D11BFA9711949526E89C32F4 /* Makoto詞書.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Makoto詞書.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2772877EEE51C5B794A3A3B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D91F57B3BA838170667845F9 /* Home */,
+				750E067A4826547DB682C9DB /* Settings */,
+				9D78B4717CCB971928250CA8 /* Swipe */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4EC173448256AA707D175531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D11BFA9711949526E89C32F4 /* Makoto詞書.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5555D46D59B89CC6526BF39F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1EC1576C66B335F85EAE1840 /* ProgressTracker.swift */,
+				721C1B7A3D6860C07882CC7B /* WordImporter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		709824DE5E5E4A52ACD1F28B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A911699CBC1DCC70A9C20FED /* ProgressState.swift */,
+				9214F3BC189A684CB36D8039 /* Word.swift */,
+				2F48B88A2A1CF1F9CBF49E59 /* WordBook.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		750E067A4826547DB682C9DB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BA7EFDCC708B10D7D906E316 /* AboutView.swift */,
+				2FF74A223108AA5FDBC13600 /* ImportPreviewView.swift */,
+				AE7B7E360E330CAEB2385971 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		938B42DEBC33C17AF5A2F81C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				000A8C49738FD83A6996AEE4 /* DesignTokens.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9C3D8B71015B87E48325C40A = {
+			isa = PBXGroup;
+			children = (
+				D7FDCC8145A9D5F5CE07A23C /* Sources */,
+				4EC173448256AA707D175531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D78B4717CCB971928250CA8 /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				325463579F2BEE1023FACAEC /* SwipeView.swift */,
+				2346DF4464F13230715A2C3D /* WordCardView.swift */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
+		D7FDCC8145A9D5F5CE07A23C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6BE677F6FD57920E01D62 /* Assets.xcassets */,
+				389D1FBA82D78EEFBF71C31D /* Info.plist */,
+				15D3AF98FFA27D128E820996 /* MakotoKotobagakiApp.swift */,
+				709824DE5E5E4A52ACD1F28B /* Models */,
+				5555D46D59B89CC6526BF39F /* Services */,
+				938B42DEBC33C17AF5A2F81C /* Utilities */,
+				2772877EEE51C5B794A3A3B0 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D91F57B3BA838170667845F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				68360D348939F735297D53DF /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDA211B363A7180F01995A28 /* Makoto詞書 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto詞書" */;
+			buildPhases = (
+				51D0DEFF5CFF13EDAA54CA70 /* Sources */,
+				AE58206AD73819E3EE682B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Makoto詞書";
+			packageProductDependencies = (
+			);
+			productName = "Makoto詞書";
+			productReference = D11BFA9711949526E89C32F4 /* Makoto詞書.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19C649656A6D2927F98E04FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					DDA211B363A7180F01995A28 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto詞書" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9C3D8B71015B87E48325C40A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4EC173448256AA707D175531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA211B363A7180F01995A28 /* Makoto詞書 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE58206AD73819E3EE682B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFDAFA748E5290C833BF97B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51D0DEFF5CFF13EDAA54CA70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB730BEB8371D4A39043EF /* AboutView.swift in Sources */,
+				B975826B08EE4518B0E0D63A /* DesignTokens.swift in Sources */,
+				FF87D28D038CCE42C64E9356 /* HomeView.swift in Sources */,
+				2D3E0DD01D826ED12D3C9870 /* ImportPreviewView.swift in Sources */,
+				CF40B39C8711884FE9F38C8C /* MakotoKotobagakiApp.swift in Sources */,
+				F4C5673138C7BFCC9A76D9BC /* ProgressState.swift in Sources */,
+				BBD88DCE287B69055B8C1946 /* ProgressTracker.swift in Sources */,
+				8EF8F4A94617E214F0187E23 /* SettingsView.swift in Sources */,
+				6DFCF0288AF8C3533B5A8E6E /* SwipeView.swift in Sources */,
+				D9E36BC994A81776F887A55B /* Word.swift in Sources */,
+				6CB5BEA38103630A5804F358 /* WordBook.swift in Sources */,
+				8661FCA0A7661E239C92607F /* WordCardView.swift in Sources */,
+				2AA1A4CE0E31642D5C937844 /* WordImporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		62702535BC6E37DC77FC5BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		9C09A9116F4D3F5E03373F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		ED2286D79F0E294BA8A829F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDDN84K629;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
+				PRODUCT_NAME = "Makoto詞書";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				UIRequiresFullScreen = YES;
+				UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				UIUserInterfaceStyle = Dark;
+			};
+			name = Debug;
+		};
+		F4B28E2641F4E278427D23D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDDN84K629;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
+				PRODUCT_NAME = "Makoto詞書";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				UIRequiresFullScreen = YES;
+				UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				UIUserInterfaceStyle = Dark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto詞書" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2286D79F0E294BA8A829F4 /* Debug */,
+				F4B28E2641F4E278427D23D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto詞書" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62702535BC6E37DC77FC5BDB /* Debug */,
+				9C09A9116F4D3F5E03373F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19C649656A6D2927F98E04FF /* Project object */;
+}
