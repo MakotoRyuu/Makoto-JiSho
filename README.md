@@ -1,10 +1,13 @@
 # Makoto詞書
 
+**IOS18+ ONLY** <br>
+
 小而美的 Swift + SwiftUI 背单词 App，inspired by Free高考英语。
 
 > 像刷短视频一样刷单词——通过简单直观的上下滑动交互，让背单词变得轻快、无压力、容易坚持。
 
 ---
+
 
 ## 功能特性
 
