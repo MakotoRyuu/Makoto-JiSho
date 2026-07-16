@@ -72,9 +72,12 @@ struct SwipeView: View {
     private func loadData() {
         let bid = activeBookID.isEmpty ? nil : activeBookID
 
-        // Load SwiftData objects into a dictionary for later batch-update
-        let all = (try? modelContext.fetch(FetchDescriptor<Word>(sortBy: [SortDescriptor(\.createdAt)]))) ?? []
-        let filtered = all.filter { $0.wordBookID == bid }
+        // Load only the active book's words, sorted, in one indexed query.
+        let descriptor = FetchDescriptor<Word>(
+            predicate: #Predicate<Word> { $0.wordBookID == bid },
+            sortBy: [SortDescriptor(\.createdAt)]
+        )
+        let filtered = (try? modelContext.fetch(descriptor)) ?? []
         wordObjects = Dictionary(uniqueKeysWithValues: filtered.compactMap { w in
             w.english.isEmpty ? nil : (w.english, w)
         })

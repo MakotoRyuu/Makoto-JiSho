@@ -10,17 +10,15 @@ struct HomeView: View {
     @State private var showSwipe = false
     @State private var showSettings = false
 
-    private var words: [Word] {
-        let bid = activeBookID.isEmpty ? nil : activeBookID
-        return allWords.filter { $0.wordBookID == bid }
-    }
-
     private var progress: ProgressState? {
         let bid = activeBookID.isEmpty ? "" : activeBookID
         return allProgressStates.first { ($0.bookID ?? "") == bid }
     }
 
-    private var totalWordCount: Int { words.count }
+    private var totalWordCount: Int {
+        let bid = activeBookID.isEmpty ? nil : activeBookID
+        return allWords.reduce(0) { $0 + ($1.wordBookID == bid ? 1 : 0) }
+    }
     private var currentRoundSeen: Int {
         progress?.reviewedEnglishWords.count ?? 0
     }

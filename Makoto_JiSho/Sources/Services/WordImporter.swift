@@ -29,7 +29,11 @@ struct WordImporter {
     static func save(context: ModelContext, parsed: [ParsedWord], bookID: String?) -> (inserted: Int, updated: Int) {
         var inserted = 0
         var updated = 0
-        let allWords = (try? context.fetch(FetchDescriptor<Word>())) ?? []
+
+        // Fetch only the target book's existing words, keyed by english for O(1) lookup.
+        let existingDescriptor = FetchDescriptor<Word>(predicate: #Predicate<Word> { $0.wordBookID == bookID })
+        let existingWords = (try? context.fetch(existingDescriptor)) ?? []
+        var existingByEnglish = Dictionary(existingWords.map { ($0.english, $0) }, uniquingKeysWith: { first, _ in first })
         var seenInBatch = Set<String>()
 
         for word in parsed {
@@ -44,11 +48,13 @@ struct WordImporter {
             seenInBatch.insert(english)
 
             // Check for existing word in the same book
-            if let existing = allWords.first(where: { $0.english == english && $0.wordBookID == bookID }) {
+            if let existing = existingByEnglish[english] {
                 existing.chinese = chinese
                 updated += 1
             } else {
-                context.insert(Word(english: english, chinese: chinese, wordBookID: bookID))
+                let newWord = Word(english: english, chinese: chinese, wordBookID: bookID)
+                context.insert(newWord)
+                existingByEnglish[english] = newWord
                 inserted += 1
             }
         }

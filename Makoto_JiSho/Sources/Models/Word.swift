@@ -3,6 +3,8 @@ import Foundation
 
 @Model
 final class Word {
+    #Index<Word>([\.wordBookID], [\.wordBookID, \.createdAt], [\.wordBookID, \.english])
+
     var english: String
     var chinese: String
     var lastSeenAt: Date?

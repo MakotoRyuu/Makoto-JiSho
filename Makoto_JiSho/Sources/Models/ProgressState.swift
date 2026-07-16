@@ -3,6 +3,8 @@ import Foundation
 
 @Model
 final class ProgressState {
+    #Index<ProgressState>([\.bookID])
+
     var bookID: String?
     var currentIndex: Int = 0
     var completedRounds: Int = 0

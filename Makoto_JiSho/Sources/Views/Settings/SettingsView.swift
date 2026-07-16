@@ -7,8 +7,6 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @AppStorage("activeWordBookID") private var activeBookID: String = ""
     @Query(sort: \WordBook.createdAt) private var books: [WordBook]
-    @Query private var allWords: [Word]
-    @Query private var allProgressStates: [ProgressState]
 
     @State private var showFileImporter = false
     @State private var parsedWords: [ParsedWord] = []
@@ -111,12 +109,9 @@ struct SettingsView: View {
     // MARK: - Book Management
     private func deleteBook(_ book: WordBook) {
         let bookID = book.id
-        for word in allWords where word.wordBookID == bookID {
-            modelContext.delete(word)
-        }
-        for progress in allProgressStates where (progress.bookID ?? "") == bookID {
-            modelContext.delete(progress)
-        }
+        // Batch delete scoped to this book — no fetch-all into memory.
+        try? modelContext.delete(model: Word.self, where: #Predicate<Word> { $0.wordBookID == bookID })
+        try? modelContext.delete(model: ProgressState.self, where: #Predicate<ProgressState> { $0.bookID == bookID })
         if book.id == activeBookID {
             let remaining = books.filter { $0.id != book.id }
             activeBookID = remaining.first?.id ?? ""
