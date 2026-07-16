@@ -7,226 +7,230 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AA1A4CE0E31642D5C937844 /* WordImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C1B7A3D6860C07882CC7B /* WordImporter.swift */; };
-		2D3E0DD01D826ED12D3C9870 /* ImportPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF74A223108AA5FDBC13600 /* ImportPreviewView.swift */; };
-		4FEB730BEB8371D4A39043EF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7EFDCC708B10D7D906E316 /* AboutView.swift */; };
-		6CB5BEA38103630A5804F358 /* WordBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48B88A2A1CF1F9CBF49E59 /* WordBook.swift */; };
-		6DFCF0288AF8C3533B5A8E6E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325463579F2BEE1023FACAEC /* SwipeView.swift */; };
-		8661FCA0A7661E239C92607F /* WordCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346DF4464F13230715A2C3D /* WordCardView.swift */; };
-		8EF8F4A94617E214F0187E23 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7B7E360E330CAEB2385971 /* SettingsView.swift */; };
-		ACFDAFA748E5290C833BF97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC6BE677F6FD57920E01D62 /* Assets.xcassets */; };
-		B975826B08EE4518B0E0D63A /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A8C49738FD83A6996AEE4 /* DesignTokens.swift */; };
-		BBD88DCE287B69055B8C1946 /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1576C66B335F85EAE1840 /* ProgressTracker.swift */; };
-		CF40B39C8711884FE9F38C8C /* MakotoKotobagakiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3AF98FFA27D128E820996 /* MakotoKotobagakiApp.swift */; };
-		D9E36BC994A81776F887A55B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9214F3BC189A684CB36D8039 /* Word.swift */; };
-		F4C5673138C7BFCC9A76D9BC /* ProgressState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911699CBC1DCC70A9C20FED /* ProgressState.swift */; };
-		FF87D28D038CCE42C64E9356 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68360D348939F735297D53DF /* HomeView.swift */; };
+		1570691E51C0FEDB44BE30D4 /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B50D79EF4CA5BA76DAA0E7 /* ProgressTracker.swift */; };
+		230B2F3A7D9F15B3E7DC8EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C502EB699D0A3EDAA2CCAD4E /* Assets.xcassets */; };
+		2EA737F9E6E27426D894F8A6 /* PersistenceActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F150BCE2A2A5B4CD04F76 /* PersistenceActor.swift */; };
+		41B3862F2B5F86B28132C8DC /* ProgressState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B67DD0785097CDED93F754 /* ProgressState.swift */; };
+		42B2B6E0843A256EA9F33B2A /* WordBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C810C65791104543F3F51E /* WordBook.swift */; };
+		5A3306FE84727D462D12B53D /* ImportPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FED550987EC351AE504831F /* ImportPreviewView.swift */; };
+		86A4F99CAB32B79DAC59C721 /* WordCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CDE06EFD787215270DD8A6 /* WordCardView.swift */; };
+		950F3A9B5D6B75DE46C4D7B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D981104EA8E4BE1D67DC12FD /* HomeView.swift */; };
+		A4E88E509473C7C23522C01C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0EC3A7C3468B59DBB5DCA7 /* AboutView.swift */; };
+		AAE14CDA234769D88095EDD7 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFF8A476BCDC3D867718EF /* SwipeView.swift */; };
+		AC15296668F32E3B11CBE293 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF86CDE94D54E30EBF8583 /* Word.swift */; };
+		B10E7FC6409406D5C1D20D04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1A276A41970CC2ADA7BAB0 /* SettingsView.swift */; };
+		B18817624C011D6EC4BE73DC /* WordImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467C2E8469A2BDCE363C088 /* WordImporter.swift */; };
+		B7A13323DEE1FE7A9BAC9970 /* MakotoKotobagakiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3125532D5556F4BF31A3D7F /* MakotoKotobagakiApp.swift */; };
+		C0FAE1910D9CFBD7D73B89B8 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECA8683DAE9153FEDF6793 /* DesignTokens.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		000A8C49738FD83A6996AEE4 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
-		15D3AF98FFA27D128E820996 /* MakotoKotobagakiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakotoKotobagakiApp.swift; sourceTree = "<group>"; };
-		1EC1576C66B335F85EAE1840 /* ProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTracker.swift; sourceTree = "<group>"; };
-		2346DF4464F13230715A2C3D /* WordCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardView.swift; sourceTree = "<group>"; };
-		2F48B88A2A1CF1F9CBF49E59 /* WordBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBook.swift; sourceTree = "<group>"; };
-		2FF74A223108AA5FDBC13600 /* ImportPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPreviewView.swift; sourceTree = "<group>"; };
-		325463579F2BEE1023FACAEC /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
-		389D1FBA82D78EEFBF71C31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		68360D348939F735297D53DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		721C1B7A3D6860C07882CC7B /* WordImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordImporter.swift; sourceTree = "<group>"; };
-		9214F3BC189A684CB36D8039 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		A911699CBC1DCC70A9C20FED /* ProgressState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressState.swift; sourceTree = "<group>"; };
-		AE7B7E360E330CAEB2385971 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		BA7EFDCC708B10D7D906E316 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		BCC6BE677F6FD57920E01D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D11BFA9711949526E89C32F4 /* Makoto_JiSho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Makoto_JiSho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B50D79EF4CA5BA76DAA0E7 /* ProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTracker.swift; sourceTree = "<group>"; };
+		35DF86CDE94D54E30EBF8583 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		3ECB912002079CA27AD145ED /* Makoto_JiSho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makoto_JiSho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DFF8A476BCDC3D867718EF /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		5467C2E8469A2BDCE363C088 /* WordImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordImporter.swift; sourceTree = "<group>"; };
+		62CDE06EFD787215270DD8A6 /* WordCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardView.swift; sourceTree = "<group>"; };
+		6674B0F8A95F89B22FC4894B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6BECA8683DAE9153FEDF6793 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		6FED550987EC351AE504831F /* ImportPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPreviewView.swift; sourceTree = "<group>"; };
+		94B67DD0785097CDED93F754 /* ProgressState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressState.swift; sourceTree = "<group>"; };
+		9C3F150BCE2A2A5B4CD04F76 /* PersistenceActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceActor.swift; sourceTree = "<group>"; };
+		A4C810C65791104543F3F51E /* WordBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBook.swift; sourceTree = "<group>"; };
+		AC0EC3A7C3468B59DBB5DCA7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B3125532D5556F4BF31A3D7F /* MakotoKotobagakiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakotoKotobagakiApp.swift; sourceTree = "<group>"; };
+		C502EB699D0A3EDAA2CCAD4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D981104EA8E4BE1D67DC12FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA1A276A41970CC2ADA7BAB0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		2772877EEE51C5B794A3A3B0 /* Views */ = {
+		50C50EDD2ECFE89ADEF852D9 = {
 			isa = PBXGroup;
 			children = (
-				D91F57B3BA838170667845F9 /* Home */,
-				750E067A4826547DB682C9DB /* Settings */,
-				9D78B4717CCB971928250CA8 /* Swipe */,
+				83FDAD7C265B9285A6BB52CF /* Sources */,
+				5865F9156ECEB3A458D86D36 /* Products */,
 			);
-			path = Views;
 			sourceTree = "<group>";
 		};
-		4EC173448256AA707D175531 /* Products */ = {
+		5733D70289BD54B7F35BDA8C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D11BFA9711949526E89C32F4 /* Makoto_JiSho.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5555D46D59B89CC6526BF39F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1EC1576C66B335F85EAE1840 /* ProgressTracker.swift */,
-				721C1B7A3D6860C07882CC7B /* WordImporter.swift */,
+				9C3F150BCE2A2A5B4CD04F76 /* PersistenceActor.swift */,
+				12B50D79EF4CA5BA76DAA0E7 /* ProgressTracker.swift */,
+				5467C2E8469A2BDCE363C088 /* WordImporter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		709824DE5E5E4A52ACD1F28B /* Models */ = {
+		5865F9156ECEB3A458D86D36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A911699CBC1DCC70A9C20FED /* ProgressState.swift */,
-				9214F3BC189A684CB36D8039 /* Word.swift */,
-				2F48B88A2A1CF1F9CBF49E59 /* WordBook.swift */,
+				3ECB912002079CA27AD145ED /* Makoto_JiSho.app */,
 			);
-			path = Models;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		750E067A4826547DB682C9DB /* Settings */ = {
+		72F4C427AE7E0F5548134149 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				BA7EFDCC708B10D7D906E316 /* AboutView.swift */,
-				2FF74A223108AA5FDBC13600 /* ImportPreviewView.swift */,
-				AE7B7E360E330CAEB2385971 /* SettingsView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		938B42DEBC33C17AF5A2F81C /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				000A8C49738FD83A6996AEE4 /* DesignTokens.swift */,
+				6BECA8683DAE9153FEDF6793 /* DesignTokens.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		9C3D8B71015B87E48325C40A = {
+		7C2372E8ED2F59707F128A1D /* Swipe */ = {
 			isa = PBXGroup;
 			children = (
-				D7FDCC8145A9D5F5CE07A23C /* Sources */,
-				4EC173448256AA707D175531 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		9D78B4717CCB971928250CA8 /* Swipe */ = {
-			isa = PBXGroup;
-			children = (
-				325463579F2BEE1023FACAEC /* SwipeView.swift */,
-				2346DF4464F13230715A2C3D /* WordCardView.swift */,
+				48DFF8A476BCDC3D867718EF /* SwipeView.swift */,
+				62CDE06EFD787215270DD8A6 /* WordCardView.swift */,
 			);
 			path = Swipe;
 			sourceTree = "<group>";
 		};
-		D7FDCC8145A9D5F5CE07A23C /* Sources */ = {
+		83FDAD7C265B9285A6BB52CF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BCC6BE677F6FD57920E01D62 /* Assets.xcassets */,
-				389D1FBA82D78EEFBF71C31D /* Info.plist */,
-				15D3AF98FFA27D128E820996 /* MakotoKotobagakiApp.swift */,
-				709824DE5E5E4A52ACD1F28B /* Models */,
-				5555D46D59B89CC6526BF39F /* Services */,
-				938B42DEBC33C17AF5A2F81C /* Utilities */,
-				2772877EEE51C5B794A3A3B0 /* Views */,
+				C502EB699D0A3EDAA2CCAD4E /* Assets.xcassets */,
+				6674B0F8A95F89B22FC4894B /* Info.plist */,
+				B3125532D5556F4BF31A3D7F /* MakotoKotobagakiApp.swift */,
+				9A25A0EA32CC394D4A685AD2 /* Models */,
+				5733D70289BD54B7F35BDA8C /* Services */,
+				72F4C427AE7E0F5548134149 /* Utilities */,
+				F89E9B57C0D0BBDA0905B26D /* Views */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		D91F57B3BA838170667845F9 /* Home */ = {
+		9A25A0EA32CC394D4A685AD2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				68360D348939F735297D53DF /* HomeView.swift */,
+				94B67DD0785097CDED93F754 /* ProgressState.swift */,
+				35DF86CDE94D54E30EBF8583 /* Word.swift */,
+				A4C810C65791104543F3F51E /* WordBook.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC6F9764A07DCF9F44BE9196 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AC0EC3A7C3468B59DBB5DCA7 /* AboutView.swift */,
+				6FED550987EC351AE504831F /* ImportPreviewView.swift */,
+				DA1A276A41970CC2ADA7BAB0 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F0F95FAE647A159583E22955 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D981104EA8E4BE1D67DC12FD /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F89E9B57C0D0BBDA0905B26D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0F95FAE647A159583E22955 /* Home */,
+				CC6F9764A07DCF9F44BE9196 /* Settings */,
+				7C2372E8ED2F59707F128A1D /* Swipe */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDA211B363A7180F01995A28 /* Makoto_JiSho */ = {
+		1B9FBCF5F713B9AC507CFCE3 /* Makoto_JiSho */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto_JiSho" */;
+			buildConfigurationList = 4A5540A6500124BA9E7573E4 /* Build configuration list for PBXNativeTarget "Makoto_JiSho" */;
 			buildPhases = (
-				51D0DEFF5CFF13EDAA54CA70 /* Sources */,
-				AE58206AD73819E3EE682B85 /* Resources */,
+				8A014727A86B0AD76863F3F8 /* Sources */,
+				2CB6F0C9D93427DBFA8B5AAC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Makoto_JiSho";
+			name = Makoto_JiSho;
 			packageProductDependencies = (
 			);
-			productName = "Makoto_JiSho";
-			productReference = D11BFA9711949526E89C32F4 /* Makoto_JiSho.app */;
+			productName = Makoto_JiSho;
+			productReference = 3ECB912002079CA27AD145ED /* Makoto_JiSho.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		19C649656A6D2927F98E04FF /* Project object */ = {
+		A1E877BAE29FAEACB8C4922D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					DDA211B363A7180F01995A28 = {
+					1B9FBCF5F713B9AC507CFCE3 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto_JiSho" */;
+			buildConfigurationList = 31697BD676605881C8D9516D /* Build configuration list for PBXProject "Makoto_JiSho" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 9C3D8B71015B87E48325C40A;
+			mainGroup = 50C50EDD2ECFE89ADEF852D9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4EC173448256AA707D175531 /* Products */;
+			productRefGroup = 5865F9156ECEB3A458D86D36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDA211B363A7180F01995A28 /* Makoto_JiSho */,
+				1B9FBCF5F713B9AC507CFCE3 /* Makoto_JiSho */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AE58206AD73819E3EE682B85 /* Resources */ = {
+		2CB6F0C9D93427DBFA8B5AAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFDAFA748E5290C833BF97B /* Assets.xcassets in Resources */,
+				230B2F3A7D9F15B3E7DC8EF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		51D0DEFF5CFF13EDAA54CA70 /* Sources */ = {
+		8A014727A86B0AD76863F3F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FEB730BEB8371D4A39043EF /* AboutView.swift in Sources */,
-				B975826B08EE4518B0E0D63A /* DesignTokens.swift in Sources */,
-				FF87D28D038CCE42C64E9356 /* HomeView.swift in Sources */,
-				2D3E0DD01D826ED12D3C9870 /* ImportPreviewView.swift in Sources */,
-				CF40B39C8711884FE9F38C8C /* MakotoKotobagakiApp.swift in Sources */,
-				F4C5673138C7BFCC9A76D9BC /* ProgressState.swift in Sources */,
-				BBD88DCE287B69055B8C1946 /* ProgressTracker.swift in Sources */,
-				8EF8F4A94617E214F0187E23 /* SettingsView.swift in Sources */,
-				6DFCF0288AF8C3533B5A8E6E /* SwipeView.swift in Sources */,
-				D9E36BC994A81776F887A55B /* Word.swift in Sources */,
-				6CB5BEA38103630A5804F358 /* WordBook.swift in Sources */,
-				8661FCA0A7661E239C92607F /* WordCardView.swift in Sources */,
-				2AA1A4CE0E31642D5C937844 /* WordImporter.swift in Sources */,
+				A4E88E509473C7C23522C01C /* AboutView.swift in Sources */,
+				C0FAE1910D9CFBD7D73B89B8 /* DesignTokens.swift in Sources */,
+				950F3A9B5D6B75DE46C4D7B1 /* HomeView.swift in Sources */,
+				5A3306FE84727D462D12B53D /* ImportPreviewView.swift in Sources */,
+				B7A13323DEE1FE7A9BAC9970 /* MakotoKotobagakiApp.swift in Sources */,
+				2EA737F9E6E27426D894F8A6 /* PersistenceActor.swift in Sources */,
+				41B3862F2B5F86B28132C8DC /* ProgressState.swift in Sources */,
+				1570691E51C0FEDB44BE30D4 /* ProgressTracker.swift in Sources */,
+				B10E7FC6409406D5C1D20D04 /* SettingsView.swift in Sources */,
+				AAE14CDA234769D88095EDD7 /* SwipeView.swift in Sources */,
+				AC15296668F32E3B11CBE293 /* Word.swift in Sources */,
+				42B2B6E0843A256EA9F33B2A /* WordBook.swift in Sources */,
+				86A4F99CAB32B79DAC59C721 /* WordCardView.swift in Sources */,
+				B18817624C011D6EC4BE73DC /* WordImporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		62702535BC6E37DC77FC5BDB /* Debug */ = {
+		3A8DFB27FF0FACC86DCDF61B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +293,61 @@
 			};
 			name = Debug;
 		};
-		9C09A9116F4D3F5E03373F8D /* Release */ = {
+		89CD8B5C500C40073698C667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDDN84K629;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
+				PRODUCT_NAME = Makoto_JiSho;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				UIRequiresFullScreen = YES;
+				UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				UIUserInterfaceStyle = Dark;
+			};
+			name = Debug;
+		};
+		B14CEEC77B15596C7D1122E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDDN84K629;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
+				PRODUCT_NAME = Makoto_JiSho;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				UIRequiresFullScreen = YES;
+				UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				UIUserInterfaceStyle = Dark;
+			};
+			name = Release;
+		};
+		FD07BE420670ECB29569EFCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,82 +403,28 @@
 			};
 			name = Release;
 		};
-		ED2286D79F0E294BA8A829F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDDN84K629;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
-				PRODUCT_NAME = "Makoto_JiSho";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
-				UIRequiresFullScreen = YES;
-				UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				UIUserInterfaceStyle = Dark;
-			};
-			name = Debug;
-		};
-		F4B28E2641F4E278427D23D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDDN84K629;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.makotomaruki.makoto-kotobagaki";
-				PRODUCT_NAME = "Makoto_JiSho";
-				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
-				UIRequiresFullScreen = YES;
-				UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				UIUserInterfaceStyle = Dark;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3808847DADE7E83A982B4733 /* Build configuration list for PBXNativeTarget "Makoto_JiSho" */ = {
+		31697BD676605881C8D9516D /* Build configuration list for PBXProject "Makoto_JiSho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED2286D79F0E294BA8A829F4 /* Debug */,
-				F4B28E2641F4E278427D23D9 /* Release */,
+				3A8DFB27FF0FACC86DCDF61B /* Debug */,
+				FD07BE420670ECB29569EFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		77D070E912B9FC04320BC93F /* Build configuration list for PBXProject "Makoto_JiSho" */ = {
+		4A5540A6500124BA9E7573E4 /* Build configuration list for PBXNativeTarget "Makoto_JiSho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62702535BC6E37DC77FC5BDB /* Debug */,
-				9C09A9116F4D3F5E03373F8D /* Release */,
+				89CD8B5C500C40073698C667 /* Debug */,
+				B14CEEC77B15596C7D1122E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 19C649656A6D2927F98E04FF /* Project object */;
+	rootObject = A1E877BAE29FAEACB8C4922D /* Project object */;
 }

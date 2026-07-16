@@ -4,6 +4,7 @@ import SwiftData
 struct SwipeView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.scenePhase) private var scenePhase
     @AppStorage("activeWordBookID") private var activeBookID: String = ""
 
     // Display-only plain structs — zero SwiftData overhead during swiping
@@ -13,11 +14,8 @@ struct SwipeView: View {
     @State private var completedRounds = 0
     @State private var roundJustCompleted = false
 
-    // Persistence handles — loaded once, only touched on save
-    @State private var wordObjects: [String: Word] = [:]  // english → Word
-    @State private var progressState: ProgressState?
-    @State private var hasUnsavedChanges = false
-    @State private var saveTask: Task<Void, Never>?
+    // Background writer — all persistence happens off the main thread.
+    @State private var persistence: PersistenceActor?
 
     var body: some View {
         ZStack {
@@ -65,6 +63,13 @@ struct SwipeView: View {
         .onAppear {
             loadData()
         }
+        .onChange(of: scenePhase) { _, phase in
+            // Persist if the app is backgrounded mid-session, so progress
+            // survives even if the app is killed without a manual close.
+            if phase != .active {
+                persistSnapshot(roundReset: false)
+            }
+        }
     }
 
     // MARK: - Data Loading (once on appear)
@@ -73,25 +78,26 @@ struct SwipeView: View {
         let bid = activeBookID.isEmpty ? nil : activeBookID
 
         // Load only the active book's words, sorted, in one indexed query.
+        // Read the display fields up front, then drop all SwiftData references
+        // so swiping is pure in-memory work.
         let descriptor = FetchDescriptor<Word>(
             predicate: #Predicate<Word> { $0.wordBookID == bid },
             sortBy: [SortDescriptor(\.createdAt)]
         )
         let filtered = (try? modelContext.fetch(descriptor)) ?? []
-        wordObjects = Dictionary(uniqueKeysWithValues: filtered.compactMap { w in
-            w.english.isEmpty ? nil : (w.english, w)
-        })
-
-        // Plain structs for display — no SwiftData references
         entries = filtered.map { (english: $0.english, chinese: $0.chinese) }
 
-        // Load progress
-        let progress = ProgressTracker.ensureExists(context: modelContext, bookID: bid)
-        progressState = progress
+        // Background writer bound to the same store.
+        persistence = PersistenceActor(modelContainer: modelContext.container)
 
-        reviewedIndices = Set(progress.reviewedEnglishWords.compactMap { english in
-            entries.firstIndex(where: { $0.english == english })
-        })
+        // Restore progress. Map saved english words → indices via a lookup
+        // table (O(n)) instead of a per-word linear scan (O(n²)).
+        let progress = ProgressTracker.ensureExists(context: modelContext, bookID: bid)
+        var indexByEnglish = [String: Int](minimumCapacity: entries.count)
+        for (i, entry) in entries.enumerated() where indexByEnglish[entry.english] == nil {
+            indexByEnglish[entry.english] = i
+        }
+        reviewedIndices = Set(progress.reviewedEnglishWords.compactMap { indexByEnglish[$0] })
         completedRounds = progress.completedRounds
         currentIndex = min(progress.currentIndex, max(entries.count - 1, 0))
     }
@@ -103,8 +109,8 @@ struct SwipeView: View {
         reviewedIndices.insert(currentIndex)
 
         if currentIndex < entries.count - 1 {
+            // Pure in-memory advance — no persistence on the hot path.
             currentIndex += 1
-            scheduleSave()
         } else {
             // Last word — check round completion
             if reviewedIndices.count >= entries.count && !entries.isEmpty {
@@ -124,56 +130,28 @@ struct SwipeView: View {
 
     // MARK: - Save & Dismiss
 
-    private func scheduleSave() {
-        hasUnsavedChanges = true
-        saveTask?.cancel()
-        saveTask = Task {
-            try? await Task.sleep(for: .seconds(1))
-            guard !Task.isCancelled else { return }
-            flushSave()
+    /// Snapshot the in-memory state and hand it to the background actor.
+    /// Never touches the main-thread model context, so it never blocks the UI.
+    private func persistSnapshot(roundReset: Bool) {
+        guard let persistence else { return }
+        let bid = activeBookID.isEmpty ? "" : activeBookID
+        let reviewed = roundReset ? [] : reviewedIndices.map { entries[$0].english }
+        let index = roundReset ? 0 : currentIndex
+        let rounds = completedRounds
+        Task.detached {
+            await persistence.persist(
+                bookID: bid,
+                reviewedEnglishWords: reviewed,
+                currentIndex: index,
+                completedRounds: rounds
+            )
         }
-    }
-
-    /// Batch-write all pending changes to SwiftData in one pass.
-    private func flushSave() {
-        guard hasUnsavedChanges else { return }
-        hasUnsavedChanges = false
-
-        // Batch-update lastSeenAt on Word objects
-        let now = Date()
-        for index in reviewedIndices {
-            let english = entries[index].english
-            wordObjects[english]?.lastSeenAt = now
-        }
-
-        // Update progress
-        if let progress = progressState {
-            progress.currentIndex = currentIndex
-            progress.reviewedEnglishWords = reviewedIndices.map { entries[$0].english }
-            progress.completedRounds = completedRounds
-        }
-
-        try? modelContext.save()
     }
 
     private func saveAndDismiss() {
-        saveTask?.cancel()
-
-        // Batch-update lastSeenAt
-        let now = Date()
-        for index in reviewedIndices {
-            let english = entries[index].english
-            wordObjects[english]?.lastSeenAt = now
-        }
-
-        // Update progress
-        if let progress = progressState {
-            progress.currentIndex = roundJustCompleted ? 0 : currentIndex
-            progress.reviewedEnglishWords = roundJustCompleted ? [] : reviewedIndices.map { entries[$0].english }
-            progress.completedRounds = completedRounds
-        }
-
-        try? modelContext.save()
+        // Dismiss immediately — the write runs on a background actor, so the
+        // close button responds instantly with no stutter.
+        persistSnapshot(roundReset: roundJustCompleted)
         dismiss()
     }
 
