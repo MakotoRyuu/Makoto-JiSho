@@ -1,4 +1,5 @@
 .DS_Store
+.claude
 
 # Xcode
 build/
@@ -22,5 +23,5 @@ Pods/
 # Carthage
 Carthage/Build/
 
-.claude
+
 需求文档.md
